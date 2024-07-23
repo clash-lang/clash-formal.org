@@ -1,0 +1,29 @@
+{{- if .Site.Menus.main }}
+{{- $currentNode := . }}
+<nav class="menu">
+    {{ if .CurrentSection }}
+        {{ if not (eq .Title "Home") }}
+            {{ partial "menu_logo.html" }}
+        {{ end }}
+    {{ else }}
+        {{ partial "menu_logo.html" }}
+    {{ end }}
+
+	<ul class="menu__list">
+    {{ if .CurrentSection }}
+        {{ if not (eq .Title "Home") }}
+            <li class="menu__item__hide"><a class="menu__link" href="/">Home</a></li>
+        {{ end }}
+    {{ else }}
+        <li class="menu__item__hide"><a class="menu__link" href="/">Home</a></li>
+    {{ end }}
+		{{- range sort .Site.Menus.main }}
+		{{- if .Name}}
+		<li class="menu__item{{if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }} menu__item--active{{end}}"><a class="menu__link" href="{{ .URL }}">{{ .Name }}</a></li>
+		{{- end }}
+		{{- end }}
+	</ul>
+</nav>
+{{ else -}}
+<div class="divider"></div>
+{{- end }}

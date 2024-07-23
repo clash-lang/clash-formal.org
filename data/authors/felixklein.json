@@ -1,0 +1,9 @@
+{
+    "name": "Felix Klein",
+    "bio": "Felix is a digital design engineer and researcher at <a href='http://qbaylogic.com/'>QBayLogic</a> since 2023. He is passionate about hardware design, formal verification, funtional reactive programming and temporal logics.",
+    "image": "/media/authors/felixklein.jpg",
+    "weight": 1,
+    "social": {
+        "github": "https://github.com/kleinreact"
+    }
+}

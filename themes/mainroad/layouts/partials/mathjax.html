@@ -1,0 +1,3 @@
+{{ if and .IsPage (eq (.Param "mathjax") true) }}
+<script src="{{ .Param "mathjaxPath" }}{{ with .Param "mathjaxConfig" }}?config={{ . }}{{ end }}" async></script>
+{{ end }}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en-us" }}">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    {{ if or (eq .Title "Blogs") (eq .Title "News") }}
+        <title>Clash: {{ string .CurrentSection.Type | title }}</title>
+    {{ else }}
+        {{ if .Title }}
+            <title>Clash: {{ .Title }}</title>
+        {{ else }}
+            <title</title>
+        {{ end }}
+    {{ end }}
+
+	<meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{else}}{{ .Params.Description }}{{end}}">
+	{{ hugo.Generator }}
+	{{ if .Site.Params.opengraph }}{{ template "_internal/opengraph.html" . }}{{ end }}
+	{{ if .Site.Params.twitter_cards }}{{ template "_internal/twitter_cards.html" . }}{{ end }}
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	{{- range .AlternativeOutputFormats }}
+	<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .RelPermalink | safeURL }}">
+	{{- end }}
+	<link referrerpolicy="no-referrer" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+	<link rel="stylesheet" href="{{ "css/syntax.css" | relURL }}">
+	<script type="text/javascript" src="{{ "js/scripts.js" | relURL }}"></script>
+	<script type="text/javascript" src="{{ "js/jquery-3.3.1.min.js" | relURL }}"></script>
+	<link rel="shortcut icon" href="{{ "/media/logos/favicon.png" | relURL }}">
+</head>
+<body class="body {{ if or (eq .Title "Blogs") (eq .Title "News") }}body-right-sidebar{{ else }}body-no-sidebar{{ end }}">
+	<div class="container container-outer">
+		<header class="header">
+			{{ partial "menu.html" . }}
+		</header>
+        {{ if eq .Title "Home" }}
+        <div class="clash-banner">
+            <div class="logo"></div>
+            <div class="logo__inner">
+                <div class="logo__title">Clash Formal</div>
+                <div class="logo__tagline">Ecosystem formally verifiable IT</div>
+            </div>
+        </div>
+        {{ else }}
+        <div></div>
+        {{ end }}
+		<div class="wrapper clearfix">
