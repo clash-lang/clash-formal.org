@@ -5,10 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     {{ if or (eq .Title "Blogs") (eq .Title "News") }}
-        <title>Clash: {{ string .CurrentSection.Type | title }}</title>
+        <title>Clash Formal: {{ string .CurrentSection.Type | title }}</title>
     {{ else }}
         {{ if .Title }}
-            <title>Clash: {{ .Title }}</title>
+            <title>Clash Formal: {{ .Title }}</title>
         {{ else }}
             <title</title>
         {{ end }}
