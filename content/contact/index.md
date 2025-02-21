@@ -10,7 +10,7 @@ The project is part of the [Ecosystem formally verifiable IT (EvIT)](https://www
 
 <div style="height:0.2em"></div>
 
-<p style="line-height:1">You like to learn more about our mission of integrating functional languages with hardware design and formal verification tools.</p>
+<p style="line-height:1">Would you like to learn more about our mission of integrating functional languages with hardware design and formal verification tools?</p>
 
 
 Then contact us directly via our [contact form](https://qbaylogic.com/contact).
