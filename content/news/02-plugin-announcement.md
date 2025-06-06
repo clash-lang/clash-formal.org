@@ -109,7 +109,7 @@ resort to lowly coercions. Isn't that nice?
 
 ## Next steps: using the plugin and potentially contributing
 
-The plugin is available [on Github](https://github.com/QBayLogic/ghc-typelits-proof-assist)
+The plugin is available [on Github](https://github.com/clash-lang/ghc-typelits-proof-assist)
 and comes with a full-fledged `README` on how to properly use the plugin.
 
 Keep in mind it's a work-in-progress and that as such, things are subject to change.
