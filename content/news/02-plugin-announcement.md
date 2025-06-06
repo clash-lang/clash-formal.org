@@ -1,5 +1,5 @@
 ---
-title: "GHC type-level plugin for Nats is out with a new API!"
+title: "ghc-typelist-proof-assist's new API is out!"
 date: "2025-06-06"
 description: "Announcement for the GHC typelits plugin"
 disable_comments: false
