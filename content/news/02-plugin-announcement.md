@@ -9,7 +9,7 @@ toc: false
 mathjax: true
 ---
 
-Two weeks ago, we released a new API for [ghc-typelits-proof-assist](https://github.com/QBayLogic/ghc-typelits-proof-assist). It's due
+Two weeks ago, we released a new API for [ghc-typelits-proof-assist](https://github.com/clash-lang/ghc-typelits-proof-assist). It's due
 time for a short presentation!
 
 ## What is it?
