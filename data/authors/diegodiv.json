@@ -1,0 +1,9 @@
+{
+    "name": "Diego Diverio",
+    "bio": "Diego is a Haskell enthusiast who started working at QBayLogic in 2024, as part of the Clash Formal team.",
+    "image": "/media/authors/diegodiv.jpg",
+    "weight": 1,
+    "social": {
+        "github": "https://github.com/diegodiv"
+    }
+}
