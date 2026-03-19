@@ -7,6 +7,9 @@ author: "felixklein"
 authorbox: true # Optional, enable authorbox for specific post
 toc: false
 mathjax: true
+menu:
+  main:
+    parent: 'news'
 ---
 
 The project started with the official [EvIT Kickoff](https://www.cyberagentur.de/en/press/a-milestone-for-it-security-in-germany) at the National Academy of Sciences Leopoldina in Germany (January 20, 2025). Together with [Cyberagentur](https://www.cyberagentur.de) and four other groups of leading experts in the field we have made it our mission to enable formal verification at every level of the IT hardware-to-software stack.  Our shared goal is the creation a new ecosystem of tools and methodologies that not only leverages the applicability of formal verification to new and existing system designs, but similarly facilitates a network and community of formal verification experts and users.

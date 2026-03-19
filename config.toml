@@ -61,32 +61,11 @@ unsafe= true
 [menu]
 
   [[menu.main]]
-    identifier = "Overview"
-    name = "Overview"
+    identifier = "home"
+    name = "Home"
     pre = ""
-    url = "/overview/"
-    weight = 60
-
-  [[menu.main]]
-    identifier = "start"
-    name = "Get started"
-    pre = ""
-    url = "/start/"
-    weight = 50
-
-  [[menu.main]]
-    identifier = "documentation"
-    name = "Documentation"
-    pre = ""
-    url = "/documentation/"
-    weight = 40
-
-  [[menu.main]]
-    identifier = "community"
-    name = "Community"
-    pre = ""
-    url = "/community/"
-    weight = 30
+    url = "/"
+    weight = 10
 
   [[menu.main]]
     identifier = "news"
@@ -96,8 +75,15 @@ unsafe= true
     weight = 20
 
   [[menu.main]]
+    identifier = "community"
+    name = "Community"
+    pre = ""
+    url = "/community/"
+    weight = 30
+
+  [[menu.main]]
     identifier = "contact"
     name = "Contact"
     pre = ""
     url = "/contact/"
-    weight = 10
+    weight = 40
