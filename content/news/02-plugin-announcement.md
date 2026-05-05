@@ -7,6 +7,9 @@ author: "diegodiv"
 authorbox: true # Optional, enable authorbox for specific post
 toc: false
 mathjax: true
+menu:
+  main:
+    parent: 'news'
 ---
 
 Two weeks ago, we released a new API for [ghc-typelits-proof-assist](https://github.com/clash-lang/ghc-typelits-proof-assist). It's due

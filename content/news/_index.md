@@ -1,0 +1,5 @@
+---
+menu:
+  main:
+    parent: 'news'
+---
